@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toko Kitab — Pustaka Samhan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       SIDEBAR
+  ══════════════════════════════════════ -->
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <img src="../logo nusantara knockout png trsp.png" alt="Logo Pustaka Samhan" />
+      <span class="brand-name">Pustaka Samhan</span>
+      <span class="brand-tagline">مكتبة سمحان</span>
+    </div>
+
+    <nav class="sidebar-nav">
+      <span class="nav-label">Menu Utama</span>
+      <ul>
+        <li>
+          <a href="tentang-kami.html">
+            <svg class="nav-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+            Tentang Kami
+          </a>
+        </li>
+        <li>
+          <a href="ecommerce.html" class="active">
+            <svg class="nav-icon" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+            Toko Kitab
+          </a>
+        </li>
+      </ul>
+
+      <span class="nav-label">Kategori Kitab</span>
+      <ul>
+        <li>
+          <a href="#" class="active">
+            <svg class="nav-icon" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+            Fiqih &amp; Ushul
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg class="nav-icon" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            Tafsir &amp; Ulumul Qur'an
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg class="nav-icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+            Hadits &amp; Musthalah
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg class="nav-icon" viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+            Nahwu &amp; Sharaf
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg class="nav-icon" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            Tasawuf &amp; Akhlak
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg class="nav-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+            Sejarah Islam
+          </a>
+        </li>
+      </ul>
+
+      <span class="nav-label">Informasi</span>
+      <ul>
+        <li>
+          <a href="#">
+            <svg class="nav-icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            Hubungi Kami
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg class="nav-icon" viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+            Cara Pemesanan
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="ornament">✦ ✦ ✦</div>
+      <p>Toko Kitab Impor Arab<br />Terpercaya di Indonesia</p>
+    </div>
+  </aside>
+
+  <!-- ══════════════════════════════════════
+       MAIN WRAPPER
+  ══════════════════════════════════════ -->
+  <div class="main-wrapper">
+
+    <!-- TOP NAVIGATION -->
+    <header class="topnav">
+      <div class="topnav-left">
+        <span class="page-title">Toko Kitab</span>
+        <nav class="breadcrumb">
+          <span>Beranda</span>
+          <span class="breadcrumb-sep">›</span>
+          <span>Toko Kitab</span>
+        </nav>
+      </div>
+      <div class="topnav-right">
+        <div class="search-box">
+          <svg class="search-icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" placeholder="Cari kitab, pengarang, atau penerbit…" />
+        </div>
+        <button class="cart-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          Keranjang
+          <span class="cart-badge">3</span>
+        </button>
+        <div class="user-avatar" title="Akun Saya">A</div>
+      </div>
+    </header>
+
+    <!-- PAGE CONTENT -->
+    <main class="page-content">
+
+      <!-- Promo Banner -->
+      <div class="promo-banner">
+        <div class="promo-text">
+          <h2>Diskon Akhir Tahun<br/>Koleksi Kitab Klasik</h2>
+          <p>Dapatkan potongan harga spesial untuk kitab-kitab pilihan edisi tahqiq terbaik</p>
+        </div>
+        <div class="promo-badge">
+          <span class="discount">30%</span>
+          <span class="promo-label">Diskon s.d.<br/>31 Des 2024</span>
+        </div>
+      </div>
+
+      <!-- Filter & Sort Toolbar -->
+      <div class="ecom-toolbar">
+        <div class="filter-tabs">
+          <button class="filter-tab active">Semua Kitab</button>
+          <button class="filter-tab">Fiqih &amp; Ushul</button>
+          <button class="filter-tab">Tafsir</button>
+          <button class="filter-tab">Hadits</button>
+          <button class="filter-tab">Nahwu</button>
+          <button class="filter-tab">Tasawuf</button>
+          <button class="filter-tab">Sejarah</button>
+          <button class="filter-tab">Terbaru</button>
+          <button class="filter-tab">Diskon</button>
+        </div>
+        <div class="sort-area">
+          <label>Urutkan:</label>
+          <select>
+            <option>Terpopuler</option>
+            <option>Terbaru</option>
+            <option>Harga Terendah</option>
+            <option>Harga Tertinggi</option>
+            <option>Rating Tertinggi</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Products Layout -->
+      <div class="products-layout">
+
+        <!-- Filter Sidebar -->
+        <aside class="filter-sidebar">
+          <h4>Filter</h4>
+
+          <div class="filter-group">
+            <span class="filter-group-title">Kategori</span>
+            <label class="filter-check"><input type="checkbox" checked/><span>Fiqih &amp; Ushul</span><span class="count">128</span></label>
+            <label class="filter-check"><input type="checkbox"/><span>Tafsir &amp; Ulumul Qur'an</span><span class="count">94</span></label>
+            <label class="filter-check"><input type="checkbox"/><span>Hadits &amp; Musthalah</span><span class="count">76</span></label>
+            <label class="filter-check"><input type="checkbox"/><span>Nahwu &amp; Sharaf</span><span class="count">63</span></label>
+            <label class="filter-check"><input type="checkbox"/><span>Tasawuf &amp; Akhlak</span><span class="count">55</span></label>
+            <label class="filter-check"><input type="checkbox"/><span>Sejarah Islam</span><span class="count">47</span></label>
+            <label class="filter-check"><input type="checkbox"/><span>Aqidah</span><span class="count">41</span></label>
+            <label class="filter-check"><input type="checkbox"/><span>Lughah &amp; Balaghah</span><span class="count">38</span></label>
+          </div>
+
+          <div class="filter-group">
+            <span class="filter-group-title">Asal Penerbit</span>
+            <label class="filter-check"><input type="checkbox" checked/><span>Mesir (Kairo)</span><span class="count">210</span></label>
+            <label class="filter-check"><input type="checkbox" checked/><span>Lebanon (Beirut)</span><span class="count">185</span></label>
+            <label class="filter-check"><input type="checkbox"/><span>Arab Saudi (Riyadh)</span><span class="count">143</span></label>
+            <label class="filter-check"><input type="checkbox"/><span>Yaman (Aden)</span><span class="count">62</span></label>
+            <label class="filter-check"><input type="checkbox"/><span>Yordania (Amman)</span><span class="count">48</span></label>
+          </div>
+
+          <div class="filter-group">
+            <span class="filter-group-title">Rentang Harga</span>
+            <div class="price-range">
+              <input type="range" min="50000" max="2000000" value="500000" />
+              <div class="price-labels">
+                <span>Rp 50.000</span>
+                <span>Rp 2.000.000</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <span class="filter-group-title">Kondisi</span>
+            <label class="filter-check"><input type="checkbox" checked/><span>Baru</span><span class="count">498</span></label>
+            <label class="filter-check"><input type="checkbox"/><span>Bekas (Baik)</span><span class="count">87</span></label>
+          </div>
+
+          <div class="filter-group">
+            <span class="filter-group-title">Ketersediaan</span>
+            <label class="filter-check"><input type="checkbox" checked/><span>Stok Tersedia</span></label>
+            <label class="filter-check"><input type="checkbox"/><span>Pre-Order</span></label>
+          </div>
+
+          <button class="btn-filter-apply">Terapkan Filter</button>
+        </aside>
+
+        <!-- Products Grid -->
+        <div>
+          <div class="products-grid">
+
+            <!-- Card 1 -->
+            <article class="product-card">
+              <div class="product-img">
+                <span class="product-badge badge-hot">Bestseller</span>
+                <div class="book-cover" style="background: linear-gradient(145deg, #2C1A0E, #4A2800); color: #F2E8C9;">
+                  <span class="book-title-ar">المجموع شرح المهذب</span>
+                  <span class="book-title-id">Al-Majmu' Syarh al-Muhadzdzab</span>
+                  <span class="book-author">Imam an-Nawawi</span>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-category">Fiqih Syafi'i</span>
+                <h3 class="product-name">Al-Majmu' Syarh al-Muhadzdzab</h3>
+                <span class="product-name-ar">المجموع شرح المهذب</span>
+                <p class="product-author">Imam Yahya bin Syaraf an-Nawawi</p>
+                <div class="product-rating">
+                  <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                  <span class="star">★</span><span class="star">★</span>
+                  <span class="rating-count">(238)</span>
+                </div>
+                <div class="product-footer">
+                  <div class="price-wrap">
+                    <span class="price-original">Rp 2.450.000</span>
+                    <span class="price-current">Rp 1.950.000</span>
+                  </div>
+                  <button class="btn-cart">+ Keranjang</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="product-card">
+              <div class="product-img">
+                <span class="product-badge badge-new">Baru</span>
+                <div class="book-cover" style="background: linear-gradient(145deg, #1A2C1A, #2A4A2A); color: #E8F5E8;">
+                  <span class="book-title-ar">فتح الباري شرح صحيح البخاري</span>
+                  <span class="book-title-id">Fathul Bari Syarh Shahih al-Bukhari</span>
+                  <span class="book-author">Ibn Hajar al-Asqalani</span>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-category">Hadits</span>
+                <h3 class="product-name">Fathul Bari Syarh Shahih al-Bukhari</h3>
+                <span class="product-name-ar">فتح الباري شرح صحيح البخاري</span>
+                <p class="product-author">Ibn Hajar al-Asqalani</p>
+                <div class="product-rating">
+                  <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                  <span class="star">★</span><span class="star">★</span>
+                  <span class="rating-count">(195)</span>
+                </div>
+                <div class="product-footer">
+                  <div class="price-wrap">
+                    <span class="price-original"></span>
+                    <span class="price-current">Rp 3.200.000</span>
+                  </div>
+                  <button class="btn-cart">+ Keranjang</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="product-card">
+              <div class="product-img">
+                <span class="product-badge badge-sale">−30%</span>
+                <div class="book-cover" style="background: linear-gradient(145deg, #1C1A2C, #2C2845); color: #E8E5F5;">
+                  <span class="book-title-ar">إحياء علوم الدين</span>
+                  <span class="book-title-id">Ihya' Ulumuddin</span>
+                  <span class="book-author">Imam al-Ghazali</span>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-category">Tasawuf &amp; Akhlak</span>
+                <h3 class="product-name">Ihya' Ulumuddin</h3>
+                <span class="product-name-ar">إحياء علوم الدين</span>
+                <p class="product-author">Hujjatul Islam Imam al-Ghazali</p>
+                <div class="product-rating">
+                  <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                  <span class="star">★</span><span class="star empty">★</span>
+                  <span class="rating-count">(312)</span>
+                </div>
+                <div class="product-footer">
+                  <div class="price-wrap">
+                    <span class="price-original">Rp 1.800.000</span>
+                    <span class="price-current">Rp 1.260.000</span>
+                  </div>
+                  <button class="btn-cart">+ Keranjang</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="product-card">
+              <div class="product-img">
+                <div class="book-cover" style="background: linear-gradient(145deg, #2C1A08, #5C3200); color: #FFF0D0;">
+                  <span class="book-title-ar">ألفية ابن مالك</span>
+                  <span class="book-title-id">Alfiyyah Ibnu Malik</span>
+                  <span class="book-author">Ibn Malik al-Andalusi</span>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-category">Nahwu &amp; Sharaf</span>
+                <h3 class="product-name">Alfiyyah Ibn Malik wa Syuruhiha</h3>
+                <span class="product-name-ar">ألفية ابن مالك وشروحها</span>
+                <p class="product-author">Ibn Malik al-Andalusi</p>
+                <div class="product-rating">
+                  <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                  <span class="star">★</span><span class="star">★</span>
+                  <span class="rating-count">(176)</span>
+                </div>
+                <div class="product-footer">
+                  <div class="price-wrap">
+                    <span class="price-original"></span>
+                    <span class="price-current">Rp 285.000</span>
+                  </div>
+                  <button class="btn-cart">+ Keranjang</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="product-card">
+              <div class="product-img">
+                <span class="product-badge badge-new">Baru</span>
+                <div class="book-cover" style="background: linear-gradient(145deg, #0A1C2C, #1A3A5C); color: #D0E8FF;">
+                  <span class="book-title-ar">تفسير الطبري</span>
+                  <span class="book-title-id">Tafsir ath-Thabari</span>
+                  <span class="book-author">Imam ath-Thabari</span>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-category">Tafsir</span>
+                <h3 class="product-name">Jami' al-Bayan fi Ta'wil al-Qur'an</h3>
+                <span class="product-name-ar">جامع البيان في تأويل القرآن</span>
+                <p class="product-author">Imam Muhammad Ibn Jarir ath-Thabari</p>
+                <div class="product-rating">
+                  <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                  <span class="star">★</span><span class="star">★</span>
+                  <span class="rating-count">(143)</span>
+                </div>
+                <div class="product-footer">
+                  <div class="price-wrap">
+                    <span class="price-original">Rp 4.500.000</span>
+                    <span class="price-current">Rp 3.750.000</span>
+                  </div>
+                  <button class="btn-cart">+ Keranjang</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="product-card">
+              <div class="product-img">
+                <span class="product-badge badge-sale">−25%</span>
+                <div class="book-cover" style="background: linear-gradient(145deg, #1C2C1A, #2E4A25); color: #E5F2E0;">
+                  <span class="book-title-ar">الروضة الندية</span>
+                  <span class="book-title-id">ar-Raudhah an-Nadiyyah</span>
+                  <span class="book-author">Shiddiq Hasan Khan</span>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-category">Fiqih Hadits</span>
+                <h3 class="product-name">ar-Raudhah an-Nadiyyah Syarh Durar al-Bahiyyah</h3>
+                <span class="product-name-ar">الروضة الندية شرح الدرر البهية</span>
+                <p class="product-author">Shiddiq Hasan Khan al-Qanuji</p>
+                <div class="product-rating">
+                  <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                  <span class="star">★</span><span class="star empty">★</span>
+                  <span class="rating-count">(89)</span>
+                </div>
+                <div class="product-footer">
+                  <div class="price-wrap">
+                    <span class="price-original">Rp 480.000</span>
+                    <span class="price-current">Rp 360.000</span>
+                  </div>
+                  <button class="btn-cart">+ Keranjang</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 7 -->
+            <article class="product-card">
+              <div class="product-img">
+                <span class="product-badge badge-hot">Favorit</span>
+                <div class="book-cover" style="background: linear-gradient(145deg, #2C2010, #5A4020); color: #FFE8C0;">
+                  <span class="book-title-ar">البداية والنهاية</span>
+                  <span class="book-title-id">al-Bidayah wan-Nihayah</span>
+                  <span class="book-author">Imam Ibn Katsir</span>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-category">Sejarah Islam</span>
+                <h3 class="product-name">al-Bidayah wan-Nihayah</h3>
+                <span class="product-name-ar">البداية والنهاية</span>
+                <p class="product-author">Imam Ismail Ibn Katsir ad-Dimasyqi</p>
+                <div class="product-rating">
+                  <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                  <span class="star">★</span><span class="star">★</span>
+                  <span class="rating-count">(267)</span>
+                </div>
+                <div class="product-footer">
+                  <div class="price-wrap">
+                    <span class="price-original">Rp 2.800.000</span>
+                    <span class="price-current">Rp 2.200.000</span>
+                  </div>
+                  <button class="btn-cart">+ Keranjang</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 8 -->
+            <article class="product-card">
+              <div class="product-img">
+                <div class="book-cover" style="background: linear-gradient(145deg, #1A0C2C, #350A50); color: #F0E0FF;">
+                  <span class="book-title-ar">مختصر المعاني</span>
+                  <span class="book-title-id">Mukhtashar al-Ma'ani</span>
+                  <span class="book-author">Sa'd al-Taftazani</span>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-category">Balaghah</span>
+                <h3 class="product-name">Mukhtashar al-Ma'ani wa Hasyiyatuhu</h3>
+                <span class="product-name-ar">مختصر المعاني وحاشيته</span>
+                <p class="product-author">Sa'd al-Din al-Taftazani</p>
+                <div class="product-rating">
+                  <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                  <span class="star">★</span><span class="star empty">★</span>
+                  <span class="rating-count">(72)</span>
+                </div>
+                <div class="product-footer">
+                  <div class="price-wrap">
+                    <span class="price-original"></span>
+                    <span class="price-current">Rp 340.000</span>
+                  </div>
+                  <button class="btn-cart">+ Keranjang</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 9 -->
+            <article class="product-card">
+              <div class="product-img">
+                <span class="product-badge badge-new">Pre-Order</span>
+                <div class="book-cover" style="background: linear-gradient(145deg, #1C1010, #3A1818); color: #FFE8E8;">
+                  <span class="book-title-ar">العقيدة الطحاوية</span>
+                  <span class="book-title-id">al-Aqidah ath-Thahawiyyah wa Syuruhuha</span>
+                  <span class="book-author">Imam ath-Thahawi</span>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-category">Aqidah</span>
+                <h3 class="product-name">al-Aqidah ath-Thahawiyyah wa Syuruhuha</h3>
+                <span class="product-name-ar">العقيدة الطحاوية وشروحها</span>
+                <p class="product-author">Imam Abu Ja'far ath-Thahawi</p>
+                <div class="product-rating">
+                  <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                  <span class="star">★</span><span class="star">★</span>
+                  <span class="rating-count">(158)</span>
+                </div>
+                <div class="product-footer">
+                  <div class="price-wrap">
+                    <span class="price-original">Rp 620.000</span>
+                    <span class="price-current">Rp 520.000</span>
+                  </div>
+                  <button class="btn-cart">Pre-Order</button>
+                </div>
+              </div>
+            </article>
+
+          </div><!-- end .products-grid -->
+
+          <!-- Pagination -->
+          <div class="pagination">
+            <button class="page-btn">‹</button>
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <button class="page-btn">4</button>
+            <button class="page-btn">5</button>
+            <span style="color: var(--ink-muted); font-size: 0.82rem;">…</span>
+            <button class="page-btn">24</button>
+            <button class="page-btn">›</button>
+          </div>
+
+        </div><!-- end products col -->
+
+      </div><!-- end .products-layout -->
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="page-footer">
+      <div class="footer-inner">
+        <p>© 2024 Pustaka Samhan. Seluruh hak cipta dilindungi.</p>
+        <span class="footer-arabic">مكتبة سمحان — نشر العلم والمعرفة</span>
+        <p>Toko Kitab Impor Arab Terpercaya</p>
+      </div>
+    </footer>
+
+  </div><!-- end .main-wrapper -->
+</body>
+</html>
